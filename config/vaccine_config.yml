@@ -1,0 +1,7 @@
+filters:
+  pincode: '813225'
+  min_age_limit: 18
+
+search:
+  base_url: 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin'
+  no_of_weeks: 4

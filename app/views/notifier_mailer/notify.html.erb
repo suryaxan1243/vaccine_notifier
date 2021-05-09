@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaccine Availability Notification</title>
+  <style>
+      table,
+      table td {
+        border: 1px solid #cccccc;
+      }
+      td {
+        height: 80px;
+        width: 160px;
+        text-align: center;
+        vertical-align: middle;
+      }
+  </style>
+</head>
+<body>
+<table>
+  <th>S.No</th>
+  <th>Center Name</th>
+  <th>Address</th>
+  <th>Date</th>
+  <th>Available Capacity</th>
+  <th>Vaccine</th>
+  <% @data[:centers].each_with_index do |center, i| %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= center[:name] %></td>
+      <td><%= center[:address] %></td>
+      <td><%= center[:date] %></td>
+      <td><%= center[:available_capacity] %></td>
+      <td><%= center[:vaccine] %></td>
+    </tr>
+  <% end %>
+</table>
+</body>
+</html>

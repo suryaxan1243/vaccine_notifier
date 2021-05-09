@@ -1,0 +1,3 @@
+vaccine_notifier_worker:
+  cron: "*/15 * * * *"
+  class: "VaccineNotifierWorker"
