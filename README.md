@@ -3,6 +3,9 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+* Purpose
+  -
+  This application runs a worker in background once in every 15 mins to check for the vaccine slots availability, by default the time range for search is `4 weeks`, i.e, this app notifies vaccine availability through a mail if it finds any slot available in next 4 weeks. The filters for slot search are taken from `vaccine_config.rb` file.
 * Ruby version
   - 2.7.2
 
